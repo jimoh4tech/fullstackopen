@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjYyMGQxMTg5OWZlMmMzYmQzMTRhZDc0NSIsImlhdCI6MTY0NTA5MzcwMH0.lsCD1Th_l8mmRzCib6mJ-p4v7pt2kGBo6Zqyf54EmL4
+
+{
+    "title": "Still testing 3",
+    "author": "Ada Shu",
+    "url": "http://localhost:3003/api/blogs",
+    "likes": 31
+}

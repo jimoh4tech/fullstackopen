@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/620b8af0bc6bb9066736cc12
+Content-Type: application/json
+
+{
+    "title": "The Enternity",
+    "author": "Abu Abdillah",
+    "url": "http://localhost:3003/api/blogs",
+    "likes": 5,
+}
