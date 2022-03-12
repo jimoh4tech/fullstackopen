@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { ApolloServer } = require('apollo-server-express')
 const { ApolloServerPluginDrainHttpServer } = require('apollo-server-core')
 const { makeExecutableSchema } = require('@graphql-tools/schema')
@@ -19,8 +20,7 @@ const User = require('./models/user')
 const typeDefs = require('./schema')
 const resolvers = require('./resolvers')
 
-const MONGO_URI = 'mongodb+srv://Abu:Abdillah111@cluster0.ybvdl.mongodb.net/libraryApp?retryWrites=true&w=majority'
-
+const MONGO_URI = process.env.MONGODB_URI
 
 console.log('connecting to', MONGO_URI)
 
